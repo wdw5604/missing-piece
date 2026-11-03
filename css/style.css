@@ -252,8 +252,6 @@ ul, ol {
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  filter: blur(6px);
-  transform: scale(1.05);
 }
 
 .hero-bg::after {
@@ -262,19 +260,21 @@ ul, ol {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(26, 42, 64, 0.92) 0%,
-    rgba(26, 42, 64, 0.85) 35%,
-    rgba(26, 42, 64, 0.75) 60%,
-    rgba(26, 42, 64, 0.95) 100%
+    rgba(26, 42, 64, 0.15) 0%,
+    rgba(26, 42, 64, 0.10) 40%,
+    rgba(26, 42, 64, 0.25) 75%,
+    rgba(26, 42, 64, 0.60) 100%
   );
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   text-align: center;
-  padding: 100px 24px 0;
-  max-width: 800px;
+  padding: 0 24px;
 }
 
 .hero-logo {
